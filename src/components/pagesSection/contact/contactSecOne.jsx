@@ -30,10 +30,9 @@ const ContactSecOne = () => {
 
   const [value, setValue] = useState();
   let mobile = `${value}`;
-  // const [error, setError] = useState(false);
 
   // Attach file
-  const [selectedFile, setSelectedFile] = useState();
+  const [selectedFile, setSelectedFile] = useState('');
   const [isFilePicked, setIsFilePicked] = useState(false);
   const [errorFile, setErrorFile] = useState(false);
 
@@ -46,7 +45,12 @@ const ContactSecOne = () => {
       selectedFile();
     } else {
       setIsFilePicked(true);
-      setSelectedFile(event.target.files[0]);
+      if(event.target.files[0].name.toString().length > 15){
+        setSelectedFile(event.target.files[0].name.substring(0,13) + '...' + event.target.files[0].name.substring(event.target.files[0].name.length - 6));
+      }
+      else{
+        setSelectedFile(event.target.files[0].name)
+      }
       setErrorFile(false);
     }
   };
@@ -162,7 +166,7 @@ const ContactSecOne = () => {
 
               <div className="grid md:flex  md:justify-between items-center col-span-2 md:pr-8">
                 {/* file upload start */}
-                <div className="rounded-full w-full md:w-[80%] grid md:flex md:justify-between items-center">
+                <div className="rounded-full my-[-50px] w-full md:w-[80%] grid md:flex md:justify-between items-center">
                   <div className="glow-on-hover max-w-[750px] w-full relative grid items-center bg-formBg border border-[#464545] rounded-full">
                     {/* attach and label */}
                     <div className="relative flex items-center">
@@ -196,7 +200,7 @@ const ContactSecOne = () => {
                           htmlFor="file-upload"
                           className="block text-[18px] font-medium text-center px-10 max-w-[700px] overflow-hidden"
                         >
-                          {selectedFile.name}
+                          {selectedFile}
                         </label>
                       ) : (
                         <label
@@ -220,15 +224,16 @@ const ContactSecOne = () => {
                       />
                     </div>
                   </div>
-                  <div className="w-full py-4">
+                  {isFilePicked ? "" :<div className="w-full py-4">
                     <p className="block text-sm font-medium px-4">
                       *.doc, *.docx, *.pdf
                     </p>
-                  </div>
+                  </div>}
+                  
                 </div>
                 {/* file upload end */}
 
-                <div className="w-full md:w-[20%]">
+                <div className="my-[-50px] w-full md:w-[20%]">
                   <SendBtn title="Send request" className="md:mt-0 mt-8" />
                 </div>
               </div>
