@@ -164,7 +164,7 @@ const ContactSecOne = () => {
               </div>
               {/* textarea and label end */}
 
-              <div className="grid md:flex  md:justify-between items-center col-span-2 md:pr-8">
+              <div className="grid md:flex md:justify-between items-center col-span-2 md:pr-8">
                 {/* file upload start */}
                 <div className="rounded-full my-[-50px] w-full md:w-[80%] grid md:flex md:justify-between items-center">
                   <div className="glow-on-hover max-w-[750px] w-full relative grid items-center bg-formBg border border-[#464545] rounded-full">
@@ -188,8 +188,8 @@ const ContactSecOne = () => {
                           for="upload-button"
                           className={
                             isFilePicked
-                              ? " w-[60px] h-[60px] flex justify-center items-center attach-icon text-center rounded-full  p-6 z-10"
-                              : " w-[60px] h-[60px] flex justify-center items-center attach-icon attach-icon-left text-center rounded-full p-6 z-10"
+                              ? " w-[60px] h-[60px] flex justify-center items-center attach-icon text-center rounded-full  p-3 z-10"
+                              : " w-[60px] h-[60px] flex justify-center items-center attach-icon attach-icon-left text-center rounded-full p-3 z-10"
                           }
                         >
                           {!isFilePicked ? <ImAttachment /> : <FaThumbsUp />}
@@ -205,9 +205,9 @@ const ContactSecOne = () => {
                       ) : (
                         <label
                           htmlFor="file-upload"
-                          className="block text-[18px] font-medium text-center px-10"
+                          className="block text-[17px] font-small text-center px-10"
                         >
-                          <div className="flex flex-row">
+                          <div className="flex-row">
                             <span>Attach </span>
                             <span> Files</span>
                           </div>

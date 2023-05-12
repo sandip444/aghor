@@ -520,7 +520,7 @@ body {
 .attach-icon:before {
     transform: scale(.99);
     background-color: #80652e;
-    background-image: linear-gradient(45deg, #80652e 0%, #f6d98d 100%);
+    background-image: linear-gradient(45deg, #80652e 0%, #d2ab49 100%);
 
 }
 

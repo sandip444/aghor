@@ -15,13 +15,12 @@
 .blob-btn {
   z-index: 1;
   position: relative;
-  padding: 18px 50px;
+  padding: 18px 42px;
   margin-bottom: 30px;
   text-align: center;
-  text-transform: uppercase;
   color: #80652e;
   font-size: 16px;
-  font-weight: bold;
+  /* font-weight: bold; */
   background-color: transparent;
   outline: none;
   border: none;
@@ -89,7 +88,7 @@
   top: 2px;
   width: 60%;
   height: 100%;
-  background: #80652e;
+  background: #c29c3c;
   border-radius: 100%;
   transform: translate3d(0, 150%, 0) scale(1.7);
   transition: transform 0.45s;

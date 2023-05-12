@@ -1,13 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './style'
 import servicesData from './components/pagesSection/services/servicesData'
 import { motion } from "framer-motion";
 import AnimatedText from "./components/pagesSection/services/AnimatedText"
+import aos from "aos"
+import "aos/dist/aos.css"
 //import gsap from "gsap";
 // import serImg from './assets/images/services/Web Development.gif'
 // import serImg2 from './assets/images/services/Digital Marketing.gif'
 import { Link } from 'react-router-dom'
 const Services = () => {
+    useEffect (() =>{
+        aos.init({
+            duration: 2000,
+        });
+        // aos.refresh();
+        console.log("xyz1")
+
+    })
 
     // Placeholder text data, as if from API
     const placeholderText = [
@@ -28,7 +38,7 @@ const Services = () => {
     return (
         <>
 
-            <div className={`${styles.maxWidth} mx-auto px-6 md:py-20 py-10`}>
+            <div data-aos="fade-up" className={`${styles.maxWidth} mx-auto px-6 md:py-20 py-10`}>
 
                 {/* text header start */}
                 <motion.div
@@ -53,7 +63,6 @@ const Services = () => {
                 {/* text header end */}
 
             </div>
-
 
             <div className={`${styles.maxWidth} mx-auto px-6 md:py-20 py-10`}>
 

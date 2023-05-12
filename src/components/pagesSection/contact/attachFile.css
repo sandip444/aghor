@@ -11,7 +11,7 @@
     border-radius: 100px;
 }
 
-.glow-on-hover:before {
+/* .glow-on-hover:before {
     content: '';
     background: linear-gradient(45deg, #f6d98d, #80652e, #bb9446, #1c1f21, #ffe9b0, #ba9346, #80652e, #735a28, #ffe9b0);
     position: absolute;
@@ -26,7 +26,7 @@
     opacity: 0;
     transition: opacity .3s ease-in-out;
     border-radius: 100px;
-}
+} */
 
 .glow-on-hover:active {
     color: #000
