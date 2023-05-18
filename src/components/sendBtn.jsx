@@ -9,13 +9,13 @@ const SendBtn = ({ title, className }) => {
                 <span className="rounded-full">hover me</span>
             </button> */}
 
-      <div class="buttons">
-        <button class="blob-btn">
+      <div className="buttons">
+        <button className="blob-btn">
           {title}
-          <span class="blob-btn__inner">
-            <span class="blob-btn__blobs">
-              <span class="blob-btn__blob"></span>
-              <span class="blob-btn__blob"></span>
+          <span className="blob-btn__inner">
+            <span className="blob-btn__blobs">
+              <span className="blob-btn__blob"></span>
+              <span className="blob-btn__blob"></span>
             </span>
           </span>
         </button>

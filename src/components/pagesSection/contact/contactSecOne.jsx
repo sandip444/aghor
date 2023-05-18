@@ -194,7 +194,7 @@ const ContactSecOne = () => {
                           hidden
                         />
                         <label
-                          for="upload-button"
+                          htmlFor="upload-button"
                           className={
                             isFilePicked
                               ? " w-[60px] h-[60px] flex justify-center items-center attach-icon attach-thump text-center rounded-full  p-3 z-10"
