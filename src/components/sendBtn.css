@@ -88,7 +88,8 @@
   top: 2px;
   width: 60%;
   height: 100%;
-  background: #c29c3c;
+  background-color: #80652e;
+  background-image: linear-gradient(0deg, #c39537 0%, #ddb03e 100%);
   border-radius: 100%;
   transform: translate3d(0, 150%, 0) scale(1.7);
   transition: transform 0.45s;
@@ -96,7 +97,7 @@
 
 @supports (filter: url("#goo")) {
   .blob-btn__blob {
-    transform: translate3d(0, 150%, 0) scale(1.4);
+    transform: translate3d(0, 150%, 0) scale(1.9);
   }
 }
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 // import { motion } from "framer-motion"
 // import Logo from '../assets/images/LOGO.svg'
@@ -14,31 +14,19 @@ import {
 // import { Link } from "react-scroll";
 import { Link } from "react-router-dom";
 import SvgLogo from "../assets/logo";
-import { useEffect } from "react";
 
 const NavbarTwo = () => {
   //sticky header
   const [stickyHeader, setStickyHeader] = useState(false);
+  const [path, setPath] = useState(window.location.pathname);
 
-  const headerSticky = () => {
-    console.log(window.scrollY);
-    if (window.scrollY >= 500) {
-      setStickyHeader(true);
-    } else {
-      setStickyHeader(false);
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", headerSticky);
-  }, []);
+  // console.log("scrollheight",document.documentElement.scrollHeight);
+  // console.log("scrollTop", document.documentElement.scrollTop);
+  // console.log("scrollinner", window.innerHeight);
+  // console.log('window.scrollY: ', window.scrollY)
 
   const [navigation, setNavigation] = useState(false);
   const links = [
-    // {
-    //     id: 1,
-    //     link: "/",
-    //     page: "home",
-    // },
     {
       id: 1,
       link: "about",
@@ -61,25 +49,32 @@ const NavbarTwo = () => {
     },
   ];
 
-  // Animation  start
-  // const variantsBaba = {
-  //     visible: {
-  //         y: 0,
-  //         transition: {
-  //             ease: "easeOut", duration: 1
-  //         },
-  //     },
-  //     hidden: {
-  //         y: -90
-  //     },
-  // }
-  // Animation End
+  const headerSticky = () => {
+    if (window.scrollY >= 100) {
+    console.log('2')
+      setStickyHeader(false);
+    } else {
+    console.log('3')
+      console.log('esle scrollY: ', window.scrollY)
+      setStickyHeader(true);
+    }
+  };
 
-  const [path, setPath] = useState(window.location.pathname);
   useEffect(() => {
+    console.log('first useeffect')
     window.addEventListener("click", () => setPath(window.location.pathname));
+    return () => {
+      window.removeEventListener("click", () => setPath(window.location.pathname));
+    }
   }, []);
-  // console.log(path);
+
+  useEffect(() => {
+    console.log('second useeffect')
+    window.addEventListener("scroll", headerSticky);
+    return () => {
+      window.removeEventListener("scroll", headerSticky);
+    }
+  },[]);
 
   return (
     <div

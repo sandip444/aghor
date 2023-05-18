@@ -37,16 +37,25 @@ const ContactSecOne = () => {
   const [errorFile, setErrorFile] = useState(false);
 
   const changeHandler = (event) => {
-    const myArray = event.target.files[0].name.split(".");
+    let myArray
+    try {
+      myArray = event.target.files[0].name.split(".");
+    } catch (error) {
+      myArray = []
+    }
     const str = myArray[myArray.length - 1];
-    if (str !== "doc" && str !== "docx" && str !== "pdf") {
+    if (!myArray.length  && isFilePicked){
+      setIsFilePicked(false);
+      selectedFile();
+    }
+    else if (str !== "doc" && str !== "docx" && str !== "pdf") {
       alert("Please select doc or docx or pdf file");
       setIsFilePicked(false);
       selectedFile();
     } else {
-      setIsFilePicked(true);
-      if(event.target.files[0].name.toString().length > 15){
-        setSelectedFile(event.target.files[0].name.substring(0,13) + '...' + event.target.files[0].name.substring(event.target.files[0].name.length - 6));
+        setIsFilePicked(true);    
+        if(event.target.files[0].name.toString().length > 15){  
+         setSelectedFile(event.target.files[0].name.substring(0,13) + '...' + event.target.files[0].name.substring(event.target.files[0].name.length - 6));
       }
       else{
         setSelectedFile(event.target.files[0].name)
@@ -90,7 +99,7 @@ const ContactSecOne = () => {
                   type="text"
                   autoComplete="phone"
                   required
-                  className="w-full my-2 h-14 bg-formBg border border-[#464545] rounded focus:outline-none focus:ring-1 focus:ring-[#2c2c2c]  p-5 "
+                  className="w-full my-2 h-14 bg-[#111111] border border-[#464549] rounded focus:outline-none focus:ring-1 focus:ring-[#2c2c2c]  p-5 "
                 />
               </div>
               {/* input and label end */}
@@ -105,7 +114,7 @@ const ContactSecOne = () => {
                   defaultCountry="IN"
                   value={value}
                   onChange={setValue}
-                  className="w-full my-2 h-14 bg-formBg border border-[#464545] rounded focus:outline-none focus:ring-1 focus:ring-[#2c2c2c]  p-5"
+                  className="w-full my-2 h-14 bg-[#111111] border border-[#464549] rounded focus:outline-none focus:ring-1 focus:ring-[#2c2c2c]  p-5"
                 />
                 {!isValidPhoneNumber(mobile) && value > 1000000000 && (
                   <span className="text-red-400">
@@ -126,7 +135,7 @@ const ContactSecOne = () => {
                   type="email"
                   autoComplete="phone"
                   required
-                  className="w-full my-2 h-14 bg-formBg border border-[#464545] rounded focus:outline-none focus:ring-1 focus:ring-[#2c2c2c]  p-5"
+                  className="w-full my-2 h-14 bg-[#111111] border border-[#464549] rounded focus:outline-none focus:ring-1 focus:ring-[#2c2c2c]  p-5"
                 />
               </div>
               {/* input and label end */}
@@ -142,7 +151,7 @@ const ContactSecOne = () => {
                   type="text"
                   autoComplete="phone"
                   required
-                  className="w-full my-2 h-14 bg-formBg border border-[#464545] rounded focus:outline-none focus:ring-1 focus:ring-[#2c2c2c]  p-5"
+                  className="w-full my-2 h-14 bg-[#111111] border border-[#464549] rounded focus:outline-none focus:ring-1 focus:ring-[#2c2c2c]  p-5"
                 />
               </div>
               {/* input and label end */}
@@ -159,7 +168,7 @@ const ContactSecOne = () => {
                   type="text"
                   autoComplete="message"
                   required
-                  className="w-full my-2 bg-formBg border border-[#464545] rounded focus:outline-none focus:ring-1 focus:ring-[#2c2c2c]  p-5"
+                  className="w-full my-2 bg-[#111111] border border-[#464549] rounded focus:outline-none focus:ring-1 focus:ring-[#2c2c2c]  p-5"
                 />
               </div>
               {/* textarea and label end */}
@@ -167,7 +176,7 @@ const ContactSecOne = () => {
               <div className="grid md:flex md:justify-between items-center col-span-2 md:pr-8">
                 {/* file upload start */}
                 <div className="rounded-full my-[-50px] w-full md:w-[80%] grid md:flex md:justify-between items-center">
-                  <div className="glow-on-hover max-w-[750px] w-full relative grid items-center bg-formBg border border-[#464545] rounded-full">
+                  <div className="glow-on-hover max-w-[750px] w-full relative grid items-center bg-[#111111] border border-[#464545] rounded-full">
                     {/* attach and label */}
                     <div className="relative flex items-center">
                       <div
@@ -188,7 +197,7 @@ const ContactSecOne = () => {
                           for="upload-button"
                           className={
                             isFilePicked
-                              ? " w-[60px] h-[60px] flex justify-center items-center attach-icon text-center rounded-full  p-3 z-10"
+                              ? " w-[60px] h-[60px] flex justify-center items-center attach-icon attach-thump text-center rounded-full  p-3 z-10"
                               : " w-[60px] h-[60px] flex justify-center items-center attach-icon attach-icon-left text-center rounded-full p-3 z-10"
                           }
                         >
@@ -198,18 +207,17 @@ const ContactSecOne = () => {
                       {isFilePicked ? (
                         <label
                           htmlFor="file-upload"
-                          className="block text-[18px] font-medium text-center px-10 max-w-[700px] overflow-hidden"
+                          className="block text-[18px] font-small text-center file-attach px-10 max-w-[700px] overflow-hidden"
                         >
                           {selectedFile}
                         </label>
                       ) : (
                         <label
                           htmlFor="file-upload"
-                          className="block text-[17px] font-small text-center px-10"
+                          className="attached-button block text-[17px] font-small text-center w-[10rem]"
                         >
-                          <div className="flex-row">
-                            <span>Attach </span>
-                            <span> Files</span>
+                          <div>
+                            <span>Attach Files</span>
                           </div>
                         </label>
                       )}

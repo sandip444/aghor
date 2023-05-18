@@ -15,7 +15,6 @@ const Services = () => {
             duration: 2000,
         });
         // aos.refresh();
-        console.log("xyz1")
 
     })
 
