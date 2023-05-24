@@ -58,7 +58,7 @@ const ShowCase = () => {
             Writing - Graphic Design - Branding - Content Writing -{" "}
           </h2>
         </Marquee>
-        <div className="absolute w-[970px] h-[500px] top-[652px] backdrop-blur-[20px] reflection"></div>
+        <div className="absolute h-[500px] top-[652px] backdrop-blur-[40px] reflection"></div>
       </div>
     </motion.div>
   );

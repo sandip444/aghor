@@ -34,8 +34,7 @@ const ContactSecOne = () => {
   // Attach file
   const [selectedFile, setSelectedFile] = useState('');
   const [isFilePicked, setIsFilePicked] = useState(false);
-  const [errorFile, setErrorFile] = useState(false);
-
+  
   const changeHandler = (event) => {
     let myArray
     try {
@@ -60,7 +59,6 @@ const ContactSecOne = () => {
       else{
         setSelectedFile(event.target.files[0].name)
       }
-      setErrorFile(false);
     }
   };
 
@@ -214,7 +212,7 @@ const ContactSecOne = () => {
                       ) : (
                         <label
                           htmlFor="file-upload"
-                          className="attached-button block text-[17px] font-small text-center w-[10rem]"
+                          className="block text-[17px] font-small text-center w-[10rem]"
                         >
                           <div>
                             <span>Attach Files</span>
