@@ -33,9 +33,11 @@ const ContactSecOne = () => {
 
   // Attach file
   const [selectedFile, setSelectedFile] = useState('');
-  const [isFilePicked, setIsFilePicked] = useState(false);
+  const [isFilePicked, setIsFilePicked] = useState(false);  
   
   const changeHandler = (event) => {
+    console.log(event)
+    console.log(selectedFile.length)
     let myArray
     try {
       myArray = event.target.files[0].name.split(".");
@@ -45,16 +47,17 @@ const ContactSecOne = () => {
     const str = myArray[myArray.length - 1];
     if (!myArray.length  && isFilePicked){
       setIsFilePicked(false);
-      selectedFile();
+      console.log(selectedFile.length)
+      setSelectedFile("");
     }
     else if (str !== "doc" && str !== "docx" && str !== "pdf") {
       alert("Please select doc or docx or pdf file");
       setIsFilePicked(false);
       selectedFile();
     } else {
-        setIsFilePicked(true);    
-        if(event.target.files[0].name.toString().length > 15){  
-         setSelectedFile(event.target.files[0].name.substring(0,13) + '...' + event.target.files[0].name.substring(event.target.files[0].name.length - 6));
+      setIsFilePicked(true);    
+      if(event.target.files[0].name.toString().length > 15){  
+        setSelectedFile(event.target.files[0].name.substring(0,13) + '...' + event.target.files[0].name.substring(event.target.files[0].name.length - 6)); 
       }
       else{
         setSelectedFile(event.target.files[0].name)
@@ -202,7 +205,7 @@ const ContactSecOne = () => {
                           {!isFilePicked ? <ImAttachment /> : <FaThumbsUp />}
                         </label>
                       </div>
-                      {isFilePicked ? (
+                      {isFilePicked && selectedFile.length > 0  ? (
                         <label
                           htmlFor="file-upload"
                           className="block text-[18px] font-small text-center file-attach px-10 max-w-[700px] overflow-hidden"
@@ -252,7 +255,7 @@ const ContactSecOne = () => {
         <div className={`w-full mx-auto sm:mt-12`}>
           <h2 className="text-3xl text-white">
             Get in touch
-            <br className="sm:block hidden" /> with us{" "}
+            <br className="sm:block hidden" /> with us
           </h2>
 
           <div className="flex flex-col sm:flex-row py-10 justify-between">

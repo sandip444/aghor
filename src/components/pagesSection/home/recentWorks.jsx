@@ -32,9 +32,9 @@ const RecentWorks = () => {
             <div className="max-w-[500px] w-full">
               <div className="w-full mx-auto  recent_cursor">
                 <img
-                  src={require("../../../assets/images/work-1.webp")}
+                  src={require("../../../assets/images/tailwind.png")}
                   alt="work-1"
-                  className="w-full h-full"
+                  className="w-full h-full image-animation"
                 />
                 <div className="py-4">
                   <h3 className="text-2xl md:text-4xl py-2">Rupiya</h3>
@@ -61,9 +61,9 @@ const RecentWorks = () => {
             <div className="max-w-[500px] w-full">
               <div className="w-full mx-auto  recent_cursor">
                 <img
-                  src={require("../../../assets/images/work-2.webp")}
+                  src={require("../../../assets/images/baba_img.png")}
                   alt="work-1"
-                  className="w-full h-full"
+                  className="w-full h-full image-animation"
                 />
                 <div className="py-4">
                   <h3 className="text-2xl md:text-4xl py-2">Mitticool</h3>
@@ -89,15 +89,15 @@ const RecentWorks = () => {
             <div className="max-w-[500px] w-full">
               <div className="w-full mx-auto  recent_cursor">
                 <img
-                  src={require("../../../assets/images/work-3.webp")}
+                  src={require("/Users/sbhesaniya/Movies/aghor/src/assets/images/services/graphic/IDENTITY_LOGO_DESIGN.png")}
                   alt="work-1"
-                  className="w-full h-full"
+                  className="w-full h-full image-animation"
                 />
                 <div className="py-4">
                   <h3 className="text-2xl md:text-4xl py-2">Siddha </h3>
                   <h4 className="flex justify-between text-slate-300">
                     <span className="w-[90%]">
-                      Branding / Campaigns / Digital / Lead Generation{" "}
+                      Branding / Campaigns / Digital / Lead Generation
                     </span>
                     <span className="w-[10%]  ml-4 md:ml-0">2019</span>
                   </h4>

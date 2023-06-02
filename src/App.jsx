@@ -9,7 +9,7 @@ import Error from "./error";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavbarTwo from "./components/NavbarTwo";
 import Services from "./services";
-import GoToTop from "./components/GoToTop ";
+import GoToTop from "./components/GoToTop";
 import Footer from "./components/Footer";
 import PrivacyPolicy from "./PrivacyPolicy";
 import OnPageChange from "./components/OnPageChange";
