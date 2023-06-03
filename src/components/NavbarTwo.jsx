@@ -20,10 +20,10 @@ const NavbarTwo = () => {
   const [stickyHeader, setStickyHeader] = useState(false);
   const [path, setPath] = useState(window.location.pathname);
 
-  // console.log("scrollheight",document.documentElement.scrollHeight);
-  // console.log("scrollTop", document.documentElement.scrollTop);
-  // console.log("scrollinner", window.innerHeight);
-  // console.log('window.scrollY: ', window.scrollY)
+  console.log("scrollheight",document.documentElement.scrollHeight);
+  console.log("scrollTop", document.documentElement.scrollTop);
+  console.log("scrollinner", window.innerHeight);
+  console.log('window.scrollY: ', window.scrollY)
 
   const [navigation, setNavigation] = useState(false);
   const links = [
@@ -75,9 +75,33 @@ const NavbarTwo = () => {
       window.removeEventListener("scroll", headerSticky);
     }
   },[]);
+//   useEffect(() => {
+//     window.addEventListener("scroll", isSticky);
+//     return () => {
+//         window.removeEventListener("scroll", isSticky);
+//     };
+// });
+
+// let lastScroll = 0;
+// const isSticky = (e) => {
+//     const header = document.querySelector(".header");
+//     const scrollTop = window.scrollY;
+
+//     if (lastScroll - scrollTop > 0) {
+//         header.classList.add("is-sticky");
+//     } else {
+//         header.classList.remove("is-sticky");
+//     }
+
+//     if (scrollTop < 150) {
+//         header.classList.remove("is-sticky");
+//     }
+//     lastScroll = scrollTop;
+// };
 
   return (
-    <div
+    <div 
+    // className="w-full h-[90px] text-white z-[999] header top-0 transition ease-in-out delay-150"
       className={
         stickyHeader
           ? "w-full h-[90px] text-white z-[999] activeHeader sticky backdrop-blur top-0 transition ease-in-out delay-150"

@@ -177,19 +177,19 @@ const ContactSecOne = () => {
               <div className="grid md:flex md:justify-between items-center col-span-2 md:pr-8">
                 {/* file upload start */}
                 <div className="rounded-full my-[-50px] w-full md:w-[80%] grid md:flex md:justify-between items-center">
-                  <div className="glow-on-hover max-w-[750px] w-full relative grid items-center bg-[#111111] border border-[#464545] rounded-full">
+                  <div className="glow-on-hover min-w-[195px] w-full relative grid items-center bg-[#111111] border border-[#464545] rounded-full">
                     {/* attach and label */}
                     <div className="relative flex items-center">
                       <div
                         className={
                           isFilePicked
-                            ? "overflow-hidden order-last z-50"
-                            : "z-50"
+                            ? "overflow-hidden order-last z-50 transition-all duration-500 cursor-pointer"
+                            : "z-50 transition-all duration-500 cursor-pointer"
                         }
                       >
                         <input
                           type="file"
-                          className="absolute w-[60px] h-[60px] rounded-full p-6 z-[-1] top-0"
+                          className="absolute w-[60px] h-[60px] rounded-full p-6 z-[-1] top-0 transition-all duration-500 ease-in-out"
                           id="upload-button"
                           onChange={changeHandler}
                           hidden
@@ -198,8 +198,8 @@ const ContactSecOne = () => {
                           htmlFor="upload-button"
                           className={
                             isFilePicked
-                              ? " w-[60px] h-[60px] flex justify-center items-center attach-icon attach-thump text-center rounded-full  p-3 z-10"
-                              : " w-[60px] h-[60px] flex justify-center items-center attach-icon attach-icon-left text-center rounded-full p-3 z-10"
+                              ? "right-upload w-[60px] h-[60px] flex justify-center items-center attach-icon attach-thump text-center rounded-full  p-3 z-10 absolute top-0 left-[calc(100%-60px)] transition-all duration-500 ease-in-out"
+                              : " w-[60px] h-[60px] flex justify-center items-center attach-icon attach-icon-left text-center rounded-full p-3 z-10 absolute top-0 left-0 transition-all duration-500 ease-in-out"
                           }
                         >
                           {!isFilePicked ? <ImAttachment /> : <FaThumbsUp />}
@@ -208,14 +208,14 @@ const ContactSecOne = () => {
                       {isFilePicked && selectedFile.length > 0  ? (
                         <label
                           htmlFor="file-upload"
-                          className="block text-[18px] font-small text-center file-attach px-10 max-w-[700px] overflow-hidden"
+                          className="text-[18px] font-small text-center file-attach px-10 overflow-hidden pr-[74px] pl-[20px] h-[60px] flex items-center whitespace-nowrap"
                         >
                           {selectedFile}
                         </label>
                       ) : (
                         <label
                           htmlFor="file-upload"
-                          className="block text-[17px] font-small text-center w-[10rem]"
+                          className="text-[17px] font-small text-center pl-[74px] pr-[20px] h-[60px] flex items-center whitespace-nowrap"
                         >
                           <div>
                             <span>Attach Files</span>
@@ -224,9 +224,9 @@ const ContactSecOne = () => {
                       )}
                     </div>
                     {/* file input */}
-                    <div className="absolute z-10">
+                    <div className="absolute z-10 h-full">
                       <input
-                        className=" opacity-0 cursor-pointer  w-full "
+                        className=" opacity-0 cursor-pointer  w-full h-full"
                         id="small_size"
                         type="file"
                         onChange={changeHandler}
