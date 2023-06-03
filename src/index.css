@@ -533,7 +533,7 @@ body {
 
 }
 
-.attach-icon:hover:after {
+.glow-on-hover:hover .attach-icon:after {
     transform: scale(1);
 }
 
