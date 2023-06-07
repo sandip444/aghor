@@ -191,6 +191,7 @@ const ContactSecOne = () => {
                           type="file"
                           className="absolute w-[60px] h-[60px] rounded-full p-6 z-[-1] top-0 transition-all duration-500 ease-in-out"
                           id="upload-button"
+                          accept=".pdf, .docx, .doc"
                           onChange={changeHandler}
                           hidden
                         />
@@ -229,6 +230,7 @@ const ContactSecOne = () => {
                         className=" opacity-0 cursor-pointer  w-full h-full"
                         id="small_size"
                         type="file"
+                        accept=".pdf, .docx, .doc"
                         onChange={changeHandler}
                       />
                     </div>

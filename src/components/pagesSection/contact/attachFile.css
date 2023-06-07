@@ -69,12 +69,12 @@
   white-space: nowrap;
   overflow: hidden;
   /* width: 15em; */
-  animation: file 1s linear; 
+  animation: file 1.2s linear; 
   /* animation-delay: 2s; */
 }
 @keyframes file {
     from {
-        width: 130px;
+        /* width: 130px; */
       }
       
   }

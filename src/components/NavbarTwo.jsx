@@ -51,17 +51,13 @@ const NavbarTwo = () => {
 
   const headerSticky = () => {
     if (window.scrollY >= 100) {
-    console.log('2')
       setStickyHeader(false);
     } else {
-    console.log('3')
-      console.log('esle scrollY: ', window.scrollY)
       setStickyHeader(true);
     }
   };
 
   useEffect(() => {
-    console.log('first useeffect')
     window.addEventListener("click", () => setPath(window.location.pathname));
     return () => {
       window.removeEventListener("click", () => setPath(window.location.pathname));
@@ -104,7 +100,7 @@ const NavbarTwo = () => {
     // className="w-full h-[90px] text-white z-[999] header top-0 transition ease-in-out delay-150"
       className={
         stickyHeader
-          ? "w-full h-[90px] text-white z-[999] activeHeader sticky backdrop-blur top-0 transition ease-in-out delay-150"
+          ? "w-full h-[90px] text-white z-[999] activeHeader sticky top-0 transition ease-in-out delay-150"
           : "w-full h-[90px] text-white z-[999] activeHeader top-0 transition ease-in-out delay-150 "
       }
     >
