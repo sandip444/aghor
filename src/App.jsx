@@ -60,7 +60,7 @@ function App() {
 
         <BrowserRouter>
           <OnPageChange />
-          <NavbarTwo />
+          {/* <NavbarTwo /> */}
           {/* <Navbar /> */}
 
           <Routes>

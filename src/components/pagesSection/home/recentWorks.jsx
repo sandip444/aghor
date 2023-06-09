@@ -89,7 +89,7 @@ const RecentWorks = () => {
             <div className="max-w-[500px] w-full">
               <div className="w-full mx-auto  recent_cursor">
                 <img
-                  src={require("/Users/sbhesaniya/Movies/aghor/src/assets/images/services/graphic/IDENTITY_LOGO_DESIGN.png")}
+                  // src={require("/Users/sbhesaniya/Movies/aghor/src/assets/images/services/graphic/IDENTITY_LOGO_DESIGN.png")}
                   alt="work-1"
                   className="w-full h-full image-animation"
                 />

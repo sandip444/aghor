@@ -72,7 +72,7 @@ const Hero = () => {
             animate="visible"
             variants={container}
           >
-            <div className="container md:mt-[-50px]  md:max-w-[500px] max-w-[250px] text-left">
+            <div className="container md:mt-[100px]  md:max-w-[500px] max-w-[250px] text-left">
               {placeholderText.map((item, index) => {
                 return <HeroAnimatedText {...item} key={index} />;
               })}
