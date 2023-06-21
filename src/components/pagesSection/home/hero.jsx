@@ -5,10 +5,10 @@ import HeroAnimatedText from "./heroAnimatedtext";
 const Hero = () => {
   // Placeholder text data, as if from API
   const placeholderText = [
-    {
-      type: "h1",
-      text: "Aghori Media Team ® Digital Design Boutique with Focus on Aesthetics",
-    },
+    { type: "h1", text: "Aghori Media House ®"},
+    { type: "h1", text: "Emboldening and Empowering 'Brands'"}
+    // { type: "h1", text: "Aghori Media House ®"},
+    // { type: "h1", text: "Emboldening and Empowering 'Brands'"}
     // { type: "span1", text: "Aghori Media Team ®" },
     // { type: "span2", text: "Digital Design" },
     // { type: "span3", text: "Boutique with Focus" },
@@ -57,7 +57,7 @@ const Hero = () => {
   return (
     <>
       <div className="max-w-[90%] mx-auto px-4 text-white md:flex h-full">
-        <div className="w-full md:w-[50%] h-[80vh] flex flex-col justify-between">
+        <div className="w-full mt-[2%] md:w-[50%] h-[80vh] flex flex-col justify-between">
           {/* <motion.h1 className='text-3xl md:text-6xl'>
                         <span>Advanced Team ®</span><br />
                         <span>Digital Design</span><br />
@@ -72,7 +72,7 @@ const Hero = () => {
             animate="visible"
             variants={container}
           >
-            <div className="container md:mt-[100px]  md:max-w-[500px] max-w-[250px] text-left">
+            <div className="container md:mt-[10px] md:min-w-[600px] max-w-[250px] text-left">
               {placeholderText.map((item, index) => {
                 return <HeroAnimatedText {...item} key={index} />;
               })}
@@ -94,14 +94,14 @@ const Hero = () => {
             </p>
           </motion.div>
         </div>
-        <div className="absolute top-28 z-[-1] lg:invisible md:invisible sm:visible">
+        <div className="absolute top-30 z-[-1] lg:invisible md:invisible sm:visible">
           <img src={baba} alt="baba" className="md:w-[70%]" />
         </div>
         <motion.div
           variants={variantsBaba}
           initial="hidden"
           animate="visible"
-          className="w-full md:w-[50%] flex justify-center items-center md:relative absolute md:top-[20%] md:visible invisible sm:top-0s left-0 z-[-1]"
+          className="w-full md:w-[50%] flex justify-center items-center md:relative absolute md:top-[30%] md:visible invisible sm:top-0s left-0 z-[-1]"
         >
           <img src={baba} alt="baba" className="md:w-[70%]" />
         </motion.div>

@@ -12,13 +12,12 @@
 
 .glow-on-hover:hover:before {
     content: '';
-    background: linear-gradient(45deg, #f6d98d, #80652e, #bb9446, #1c1f21, #ffe9b0, #ba9346, #80652e, #735a28, #ffe9b0);
+    background: linear-gradient(45deg, #f0d89c, #9e875b, #bb9446, #383b3d, #ada07f, #a28a5c, #80652e, #735a28, #ffe9b0);
     position: absolute;
     top: -2px;
     left: -2px;
     background-size: 400%;
     z-index: -1;
-    filter: blur(5px);
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     animation: glowing 20s linear infinite;
@@ -39,7 +38,7 @@
     opacity: 1;
 } 
 
-.glow-on-hover:after {
+.glow-on-hover::after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -48,7 +47,8 @@
     background: #111;
     left: 0;
     top: 0;
-    border-radius: 100px;
+    border-radius: 120px;
+    box-shadow: none !important;
 } 
 
 @keyframes glowing {

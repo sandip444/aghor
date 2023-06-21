@@ -1,8 +1,13 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import styles from '../../../style'
 import { brandingData } from './ServicesContents'
 const Branding = () => {
+    useEffect(() => {
+        // Scroll to the top of the page when the component mounts
+        console.log("brandd")
+        window.scrollTo(0, 0);
+      });
     return (
         <>
             <div className={`${styles.maxWidth} ${styles.paddingX} mx-auto text-white`}>
@@ -11,26 +16,23 @@ const Branding = () => {
                 </div>
 
                 <div className="md:py-20 py-8 ">
-                    <h1 className="text-3xl mb-8">Strategic Branding Services To Enhance Your Brand Identity</h1>
+                    <h1 className="text-3xl mb-8">Branding</h1>
                     <div className="text-justify gap-2 grid grid-cols-1">
                         <p>
-                            In the mishmash of online ads, social media, and business content, Aghori Media House is a branding agency that gives you 4 times the visibility of your competitors. The wow factor is branding. The benefits that you get from our branding services for the future are well-documented, seamless & endless. Our branding agency drives the cost down throughout the organization while increasing revenues. Not only that, our branding agency supports all of your marketing and advertising efforts, helping you work more efficiently. Get the most for your improvements and upscaling logistics by choosing our branding services.
+                        Branding is essential for businesses to create a unique identity and connect with their target audience. At Aghori Media House, we specialize in delivering exceptional branding solutions that make your business stand out.
                         </p>
                         <p>
-                            At Aghori, we build brand recognition, loyalty within customers and penetrate to break the competition to a leading position. We are a steadfast branding agency that holds your credibility with customers, your industry, and the marketplace as a whole. With the help of our branding services establish your business as a better alternative to these big names out there in the market. Find and build your brand around a niche audience to which your business will be seen in some way that can enhance the better establishment of your brand image on your customers
+                        Our experienced team understands the power of a strong brand. We work closely with you to develop a comprehensive branding strategy that resonates with your audience. From crafting a compelling brand story to designing captivating logos, we ensure every element reflects your unique identity.
                         </p>
                         <p>
-                            Your business can become an eco-friendly option. You can be seen a more personalized in your approach.
+                        Through strategic market research and competitor analysis, we position your brand to highlight its unique value proposition. We go beyond aesthetics and create an emotional connection with your audience, building trust and loyalty.
                         </p>
                         <p>
-                            Team Aghori does the perfect research and development and then arises with perfect branding strategy that suits your space & targets the aspired result. We highly respect your time and money and that’s why we are here, to minimize the efforts for you and help you to reach more customers to transform your business into a brand.
+                            At Aghori Media House, we combine creativity, strategy, and industry expertise to help businesses build a strong and memorable brand. Our branding solutions are designed to make a lasting impact in the marketplace.
                         </p>
                         <p>
-                            You can ideally depend on Aghori Media house as we are one of the rising branding agency in Mumbai providing goal-oriented branding services such as design Style (eg. logo, colors, typography, and packaging) that speak on behalf of your success as part of your brand recognition and build loyal customers for your company.
-                        </p>
-                        <p>
-                            Some objectives we have set by ourselves to provide result oriented branding services to our clients.
-                        </p>
+                        Elevate your brand and connect with your audience on a deeper level. Contact us today to discuss how our branding services can help your business thrive.
+                        </p>                     
                     </div>
 
                     <h2 className="text-2xl my-8">Some Objectives We Have Set By Ourselves To Provide Result Oriented Branding Services To Our Clients.</h2>

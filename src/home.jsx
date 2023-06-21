@@ -8,6 +8,7 @@ import ProcessContent from "./components/pagesSection/home/processContent";
 import RecentWorks from "./components/pagesSection/home/recentWorks";
 import ShowCase from "./components/pagesSection/home/showCase";
 import TestimonialSec from "./components/pagesSection/home/tesimonialSec";
+import "./index.css"
 
 const Home = () => {
   return (

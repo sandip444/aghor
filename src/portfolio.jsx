@@ -30,10 +30,10 @@ const Portfolio = () => {
           data-aos-delay="900"
           data-aos-duration="1500"
         >
-          <h2 className="text-4xl sm:text-7xl text-white">
-            In work we dream,,
+          <h2 className="text-3xl sm:text-6xl text-white">
+            Compelling visual journeys, 
             <br className="hidden sm:block" />
-            In dreams we work!
+            crafted to inspire
           </h2>
         </div>
 

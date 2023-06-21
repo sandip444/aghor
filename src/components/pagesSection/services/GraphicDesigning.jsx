@@ -10,22 +10,16 @@ const GraphicDesigning = () => {
                 </div>
 
                 <div className="md:py-20 py-8">
-                    <h1 className="text-3xl mb-8">Top Quality Graphic Design Services for User-friendly Experience</h1>
+                    <h1 className="text-3xl mb-8">Graphic designing</h1>
                     <div className="text-justify gap-2 grid grid-cols-1">
                         <p>
-                            Designing is all about creativity and art which has its own set of advantages and applications in creative as well as corporate platforms. We are a creative and innovative designing agency that offers a wide range of design services that include an artistic touch to communicate with your target audience.
-                        </p>
+                            At Aghori Media House Pvt. Ltd, we are a creative and innovative design agency specializing in a wide range of design services that bring an artistic touch to communicate with your target audience. Our graphic designers are young, creative, and dedicated to producing unique, meaningful, and eye-catching designs for your branding and business marketing purposes.
+                        </p><br />
                         <p>
-                            Designing is an integral part of the 360-degree development of your brand, business, or company which enables a comprehensive establishment. Graphic designing is our main forte and we are versatile and diverse in the field. Graphic designing is a form of art, and at Aghori Media House Pvt. Ltd, a group of young creative graphic design artists come up with unique, creative, meaningful, abstract, and eye-catching graphic designs which help in developing a creative and inventive ad for your branding or business marketing purpose.
-                        </p>
+                            With a deep understanding of the power of visual communication, we create designs that leave a lasting impact. From print materials to websites, advertising, and brand identity, our goal-oriented and result-based approach ensures that every design captures attention and resonates with your audience.
+                        </p><br />
                         <p>
-                            People love to see art and they may not remember words or speeches but visualizations are the highest memory receptors. This simply means that people remember what they see, just like in movies. People never forget their favourite movie, even if they have watched it once. Similarly, our graphic design artists do a job that is goal-oriented and result-based. Our graphic designers are responsible for designing content for products and various activities related to print, advertising, websites, magazines, brand identity, personal identity, etc.
-                        </p>
-                        <p>
-                            We grant the liberty to our graphic designers to express imagination and creativity to the fullest. Whatever you imagine and visualize can be put in the form of display for others to appreciate, admire and even criticize.
-                        </p>
-                        <p>
-                            Learning new techniques and skills gives us the advantage of being at the top of the line as we are well aware of new software and techniques to use for your fulfilling purpose or target.
+                            We embrace creative freedom, allowing our designers to express their imagination and bring your ideas to life. By staying updated with the latest techniques and software, we deliver designs that are not only visually stunning but also aligned with industry trends.
                         </p>
                     </div>
                     
@@ -85,10 +79,10 @@ const GraphicDesigning = () => {
                 <div className="md:py-20 py-10 gap-4 grid grid-cols-1 md:grid-cols-6 text-justify">
                     {/* Heading & icon*/}
                     <div className="col-span-3">
-                        <h3 className="text-3xl md:text-5xl leading-normal mb-10"><span className="font-extralight ">Business</span><br /> Stationery</h3>
+                        <h3 className="text-3xl md:text-5xl leading-normal mb-10"><span className="font-extralight ">BUSINESS</span><br /> STATIONERY</h3>
 
                         <p>
-                            Amidst the sea of competition, your brand logo has the power to shine brightly, and grab the attention of your target audience. Your logo design should possess an artistic touch that effectively communicates with your audience. The logo should effectively represent your company, its beliefs, and what it aims to offer. Our artistic team at Aghori Media takes immense pleasure in this challenging process of creativity. We also assist you in domain name registration and registration of the trademark logo.Amidst the sea of competition, your brand logo has the power to shine brightly, and grab the attention of your target audience. Your logo design should possess an artistic touch that effectively communicates with your audience. The logo should effectively represent your company, its beliefs, and what it aims to offer. Our artistic team at Aghori Media takes immense pleasure in this challenging process of creativity. We also assist you in domain name registration and registration of the trademark logo.
+                        Creating impressive business stationery is essential for establishing a strong brand presence and leaving a memorable impact. At our design agency, we recognize the significance of professional stationery, including letterheads, business cards, envelopes, invoices, and writing pads. Our team of experienced designers specializes in crafting visually captivating and cohesive designs that reflect your brand's professionalism and attention to detail. By investing in custom stationery solutions, you can enhance your credibility, make a lasting impression, and demonstrate your commitment to excellence in all aspects of your business. Elevate your brand image with our exceptional business stationery services.
                         </p>
                         {/* icon */}
 

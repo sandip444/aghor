@@ -8,7 +8,23 @@ const DigitalMedia = () => {
                 <div className="bg-[#15236c]">
                     <img className="max-w-[80%] mx-auto mb-16" src={require('../../../assets/images/services/digital-media-marketing.svg').default} alt="services" />
                 </div>
-                <h1 className="text-2xl my-8">Digital Marketing Services to Attract Best Virtual Audiences</h1>
+                <h1 className="text-2xl my-8">Digital media marketing</h1>
+                <div className="text-justify gap-2 grid grid-cols-1">
+                    <p>
+                        Discover the power of digital media marketing with Aghori Media House. Our expert team helps businesses thrive online through strategic and results-driven approaches.
+                    </p>
+                    <p>
+                        With thorough market research and audience analysis, we create targeted campaigns using various channels like social media, SEO, content marketing, and email campaigns.
+                    </p>
+                    <p>
+                        We are storytellers at heart, crafting compelling narratives with captivating visuals and persuasive copy that resonate with your audience and drive conversions.
+                    </p>
+                    <p>
+                        Data-driven decision-making is our priority. We closely monitor campaign performance, analyze key metrics, and provide detailed reports for continual optimization.
+                    </p>
+                    <p>At Aghori Media House, we value collaboration and tailor our solutions to your unique needs. Our dedicated team is here to support you every step of the way.</p>
+                    <p>Ready to unleash the full potential of digital media marketing? Partner with us to elevate your brand, drive growth, and make a lasting impact in the digital world. Contact us now to embark on your digital marketing journey.</p>
+                </div>
 
                 {/*Seo Content start */}
                 <hr />

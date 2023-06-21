@@ -27,13 +27,17 @@ const OurServices = () => {
               </li>
               <li className="text-4xl lg:text-6xl 2xl:text-7xl">Branding</li>
               <li className="text-4xl lg:text-6xl 2xl:text-7xl">
+                <span className="font-extralight">Content</span> creation
+              </li>
+              
+              <li className="text-4xl lg:text-6xl 2xl:text-7xl">
+                <span className="font-extralight">Social</span> Media Marketing
+              </li>
+              <li className="text-4xl lg:text-6xl 2xl:text-7xl">
+                <span className="font-extralight">Digital</span> Media Marketing
+              </li>
+              <li className="text-4xl lg:text-6xl 2xl:text-7xl">
                 <span className="font-extralight">Web</span> Development
-              </li>
-              <li className="text-4xl lg:text-6xl 2xl:text-7xl">
-                <span className="font-extralight">Social</span> Media
-              </li>
-              <li className="text-4xl lg:text-6xl 2xl:text-7xl">
-                <span className="font-extralight">Digital</span> Media
               </li>
             </ul>
           </div>

@@ -7,9 +7,12 @@ import AboutSecThree from "./components/pagesSection/about/aboutSecThree";
 import AboutSecTwo from "./components/pagesSection/about/aboutSecTwo";
 import AboutTeamTwo from "./components/pagesSection/about/aboutTeamTwo";
 import AwardSec from "./components/pagesSection/about/awardSec";
+// import PostIm from "./logoo.svg";
+// import {Link} from "react-router-dom"
 const About = () => {
   return (
     <>
+   
       <Helmet>
         <meta
           name="description"
@@ -17,6 +20,11 @@ const About = () => {
         />
         <title>Know More About Aghori Media House &amp; Our Skilled Team</title>
       </Helmet>
+      {/* <div className="nn_log"><Link to="/" >
+        <img src={PostIm} alt="logo"  />
+    
+    </Link></div> */}
+      
       <AboutSecOne />
       <AboutSecTwo />
       <AboutSecThree />

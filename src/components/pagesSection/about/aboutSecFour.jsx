@@ -10,9 +10,9 @@ const AboutSecFour = () => {
                 <div className="max-w-screen-lg mx-auto  flex flex-col justify-center w-full md:h-full text-white">
                     <div>
                         <h2 className="text-4xl  inline">
-                            Clients
+                        Our esteemed patrons
                         </h2>
-                        <p className="py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta praesentium alias mollitia necessitatibus quibusdam. Harum modi esse commodi sequi vitae est tenetur dolorum suscipit, ab nisi, dignissimos iure aut perferendis.</p>
+                        <p className="py-6">Amongst the privileged few, our esteemed patrons grace us with their discerning taste, unwavering support, and a shared passion for extraordinary experiences.</p>
                     </div>
 
                     <div className="w-full grid grid-cols-2 md:grid-cols-5 gap-8 text-center py-8 md:px-20 sm:px-0">

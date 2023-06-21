@@ -16,7 +16,7 @@ const ContactSecOne = () => {
     { type: "heading1", text: "Hello!" },
     {
       type: "heading2",
-      text: "We are happy to see You on this page. Please tell what project you want to do with us?",
+      text: "Connect with us today and let's embark on a journey to transform your brand's vision into a resounding reality.",
     },
   ];
 
@@ -33,21 +33,18 @@ const ContactSecOne = () => {
 
   // Attach file
   const [selectedFile, setSelectedFile] = useState('');
-  const [isFilePicked, setIsFilePicked] = useState(false);  
-  
+  const [isFilePicked, setIsFilePicked] = useState(false);   
+
   const changeHandler = (event) => {
-    console.log(event)
-    console.log(selectedFile.length)
     let myArray
     try {
       myArray = event.target.files[0].name.split(".");
     } catch (error) {
       myArray = []
-    }
+    }   
     const str = myArray[myArray.length - 1];
     if (!myArray.length  && isFilePicked){
       setIsFilePicked(false);
-      console.log(selectedFile.length)
       setSelectedFile("");
     }
     else if (str !== "doc" && str !== "docx" && str !== "pdf") {
@@ -60,7 +57,7 @@ const ContactSecOne = () => {
         setSelectedFile(event.target.files[0].name.substring(0,13) + '...' + event.target.files[0].name.substring(event.target.files[0].name.length - 6)); 
       }
       else{
-        setSelectedFile(event.target.files[0].name)
+        setSelectedFile(event.target.files[0].name);
       }
     }
   };
@@ -189,9 +186,9 @@ const ContactSecOne = () => {
                       >
                         <input
                           type="file"
+                          accept="application/pdf, application/docx, /applicationdoc"
                           className="absolute w-[60px] h-[60px] rounded-full p-6 z-[-1] top-0 transition-all duration-500 ease-in-out"
                           id="upload-button"
-                          accept=".pdf, .docx, .doc"
                           onChange={changeHandler}
                           hidden
                         />
@@ -206,7 +203,7 @@ const ContactSecOne = () => {
                           {!isFilePicked ? <ImAttachment /> : <FaThumbsUp />}
                         </label>
                       </div>
-                      {isFilePicked && selectedFile.length > 0  ? (
+                      {isFilePicked ? (
                         <label
                           htmlFor="file-upload"
                           className="text-[18px] font-small text-center file-attach px-10 overflow-hidden pr-[74px] pl-[20px] h-[60px] flex items-center whitespace-nowrap"
@@ -227,10 +224,10 @@ const ContactSecOne = () => {
                     {/* file input */}
                     <div className="absolute z-10 h-full">
                       <input
+                        type="file"
+                        accept="application/pdf, application/docx, application/doc"
                         className=" opacity-0 cursor-pointer  w-full h-full"
                         id="small_size"
-                        type="file"
-                        accept=".pdf, .docx, .doc"
                         onChange={changeHandler}
                       />
                     </div>
