@@ -1,6 +1,6 @@
 import React from "react";
 import AboutContent from "./components/pagesSection/home/aboutContent";
-import Ethics from "./components/pagesSection/home/Ethics";
+// import Ethics from "./components/pagesSection/home/Ethics";
 import Hero from "./components/pagesSection/home/hero";
 import HomeContact from "./components/pagesSection/home/homeContact";
 import OurServices from "./components/pagesSection/home/ourServices";
@@ -20,7 +20,7 @@ const Home = () => {
       <OurServices />
       <ProcessContent />
       <RecentWorks />
-      <Ethics />
+      {/* <Ethics /> */}
       <TestimonialSec />
       <HomeContact />
     </>

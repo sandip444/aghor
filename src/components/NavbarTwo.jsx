@@ -29,8 +29,8 @@ const NavbarTwo = () => {
   const links = [
     {
       id: 1,
-      link: "about",
-      page: "about",
+      link: "identity",
+      page: "identity",
     },
     {
       id: 2,
@@ -39,8 +39,8 @@ const NavbarTwo = () => {
     },
     {
       id: 3,
-      link: "services",
-      page: "services",
+      link: "expertis",
+      page: "expertis",
     },
     {
       id: 4,

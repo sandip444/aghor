@@ -8,20 +8,23 @@ import "aos/dist/aos.css"
 //import gsap from "gsap";
 // import serImg from './assets/images/services/Web Development.gif'
 // import serImg2 from './assets/images/services/Digital Marketing.gif'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+
 const Services = () => {
+    // const history = useHistory();
+    const navigate = useNavigate();
+    const handleRedirect = (url,e) => {
+        e.preventDefault();
+        navigate(url)
+        // console.log(url)
+        // window.location.href = url.serLink;
+      };
     useEffect (() =>{
         aos.init({
             duration: 2000,
         });
 
     })
-    useEffect(() => {
-        // Scroll to the top of the page when the component mounts
-        console.log("service")
-
-        window.scrollTo(0, 0);
-      }, []);
 
     // Placeholder text data, as if from API
     const placeholderText = [
@@ -73,7 +76,7 @@ const Services = () => {
                 <div className="grid md:grid-cols-4 grid-cols-1 text-white gap-10 auto-rows-auto ">
                     {/* service item start */}
                     {servicesData.map(({ id, serTitle, serDescription, serImg, serLink, serStyle }) => (
-                            <Link to={serLink} key={id} className={`flex md:flex-row flex-col-reverse col-span-4 md:col-span-3  mb-6 rounded-lg recent_cursor ${serStyle}`}>
+                            <Link to={serLink} onClick={()=>handleRedirect(serLink)} key={id} className={`flex md:flex-row flex-col-reverse col-span-4 md:col-span-3  mb-6 rounded-lg recent_cursor ${serStyle}`}>
                             {/* content */}
                             <div className="w-full md:w-[40%] md:p-16 p-4 justify-center  flex flex-col  ">
                                 <h2 className="mb-4 text-3xl  ">{serTitle}</h2>

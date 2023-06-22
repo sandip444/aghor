@@ -4,6 +4,10 @@ import ReadMoreBtn from "../../readMoreBtn";
 import { Link } from "react-router-dom";
 // import ReadMoreBtn from '../../../assets/images/readmore-text.svg'
 const ProcessContent = () => {
+  const handleRedirect = (e) => {
+    e.preventDefault();
+    window.location.href = '/expertis'; // Replace with your desired URL
+  };
   return (
     <>
       <div className="flex h-full py-10 px-6  text-white z-[100]">
@@ -15,7 +19,7 @@ const ProcessContent = () => {
           </p>
           <div className=" block sm:flex py-10 gap-x-20 items-center">
             <Link
-              to="/about"
+              to="#" onClick={handleRedirect}
               className=" w-full md:w-[25%] flex md:justify-center pb-5"
             >
               <ReadMoreBtn />

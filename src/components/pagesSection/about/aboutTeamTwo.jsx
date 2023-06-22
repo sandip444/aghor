@@ -32,7 +32,7 @@ const AboutTeamTwo = () => {
                 </div>
                 {/* Team join Section start*/}
                 <div className="text-white w-full mx-auto text-center pt-12 text-4xl">
-                    <h2 className='mr-[26.5%]'>Hello</h2>
+                    {/* <h2 className='mr-[26.5%]'>Hello</h2> */}
                     <h2>Do you want to join our squad?</h2>
                     <svg className="team-offer__ico text-center w-[inherit] text-4xl mt-8" width="30" height="40" viewBox="0 0 30 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 -6.11959e-07C15 -6.11959e-07 15 21.0317 15 40M15 40C15 26.2974 29 23.7681 29 23.7681M15 40C15 26.2974 1 23.7681 1 23.7681" stroke="white" strokeWidth="2"></path>

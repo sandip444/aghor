@@ -5,6 +5,10 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const RecentWorks = () => {
+  const handleRedirect = (e) => {
+    e.preventDefault();
+    window.location.href = '/portfolio'; // Replace with your desired URL
+  };
   // Aos
   useEffect(() => {
     Aos.init({
@@ -141,7 +145,7 @@ const RecentWorks = () => {
           <div className="block md:row-start-[20] md:row-end-[26] md:col-start-3 col-span-2">
             {/* work card start */}
             <div className="max-w-[500px] h-full w-full flex md:justify-center items-center">
-              <Link to="/portfolio">
+              <Link to="#" onClick={handleRedirect}>
                 <ReadMoreBtn />
               </Link>
             </div>

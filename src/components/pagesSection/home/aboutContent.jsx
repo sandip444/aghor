@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import styles from "../../../style";
 // import ReadMoreBtn from '../../../assets/images/readmore-text.svg'
 const AboutContent = () => {
+  const handleRedirect = (e) => {
+    e.preventDefault();
+    window.location.href = '/identity'; // Replace with your desired URL
+  };
   return (
     <>
       <div className="flex h-full py-10 px-6  text-white  z-[100]">
@@ -16,12 +20,11 @@ const AboutContent = () => {
           </p>
           <div className=" block sm:flex py-10 gap-x-20 items-center">
             <Link
-              to="../../../about"
+              to="#" onClick={handleRedirect}
               className=" w-full md:w-[25%] flex md:justify-center pb-5"
             >
               <ReadMoreBtn />
             </Link>
-
             <div className="text-white-custom w-full sm:w-[75%] sm:pl-40">
               <p>
               we are pioneers of unconventional storytelling, pushing the boundaries of imagination to create captivating brand narratives that resonate deeply with audiences.

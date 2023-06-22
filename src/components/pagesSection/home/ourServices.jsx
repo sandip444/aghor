@@ -20,7 +20,7 @@ const OurServices = () => {
           <div
             className={`${styles.maxContainerWidth} mx-auto px-6 md:px-0 trans`}
           >
-            <h2>Our services:</h2>
+            <h2>Our Expertis:</h2>
             <ul className="font-semibold font-mono">
               <li className="text-4xl lg:text-6xl 2xl:text-7xl">
                 <span className="font-extralight">Graphic</span> Design

@@ -64,10 +64,10 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Home className="home" />} />
-            <Route exact path="/about" element={<About />} />
+            <Route exact path="/identity" element={<About />} />
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/portfolio" element={<Portfolio />} />
-            <Route exact path="/services" element={<Services />} />
+            <Route exact path="/expertis" element={<Services />} />
             <Route exact path="/joinTeamForm" element={<JoinTeamForm />} />
             <Route path="/blogs" element={<Blogs />} />
             {/* Blogs */}
@@ -94,20 +94,20 @@ function App() {
             <Route path="/portfolio/guru-randhawa" element={<GuruRandhawa />} />
             {/* Services */}
             <Route
-              path="/services/graphic-designing"
+              path="/expertis/graphic-designing"
               element={<GraphicDesigning />}
             />
-            <Route path="/services/branding" element={<Branding />} />
+            <Route path="/expertis/branding" element={<Branding />} />
             <Route
-              path="/services/web-development"
+              path="/expertis/web-development"
               element={<WebDevelopment />}
             />
-            <Route path="/services/social-media" element={<SocialMedia />} />
+            <Route path="/expertis/social-media" element={<SocialMedia />} />
             <Route
-              path="/services/content-writing"
+              path="/expertis/content-writing"
               element={<ContentWriting />}
             />
-            <Route path="/services/digital-media" element={<DigitalMedia />} />
+            <Route path="/expertis/digital-media" element={<DigitalMedia />} />
             <Route path="*" element={<Error />} />
           </Routes>
           <GoToTop />

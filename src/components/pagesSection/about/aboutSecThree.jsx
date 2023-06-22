@@ -1,7 +1,11 @@
 import React from 'react'
 import ReadMoreBtn from '../../readMoreBtn'
-
+import { Link } from "react-router-dom";
 const AboutSecThree = () => {
+    const handleRedirect = (e) => {
+        e.preventDefault();
+        window.location.href = '/expertis'; // Replace with your desired URL
+      };
     return (
         <>
             <div className='w-full  h-fit md:h-[90vh] text-white  px-6 py-10'>
@@ -15,10 +19,12 @@ const AboutSecThree = () => {
                         </p>
                     </div>
 
-                    <div className='grid gap-4 md:gap-0 md:py-0 py-5 md:grid-cols-2 items-center md:-mt-11  '>
-                        <div>
+                    <div className='grid gap-4 md:gap-0 md:py-0 py-5 md:grid-cols-2 items-center md:-mt-11  '>                  
+                        <Link
+                            to="#" onClick={handleRedirect}
+                            >
                             <ReadMoreBtn />
-                        </div>
+                        </Link>                     
                         <div>
                             <hr />
                         </div>
