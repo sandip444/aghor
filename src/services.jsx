@@ -16,8 +16,6 @@ const Services = () => {
     const handleRedirect = (url,e) => {
         e.preventDefault();
         navigate(url)
-        // console.log(url)
-        // window.location.href = url.serLink;
       };
     useEffect (() =>{
         aos.init({

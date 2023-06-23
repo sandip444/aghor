@@ -2,7 +2,7 @@
 // import PortfolioMain from './components/pagesSection/portfolio/portfolioMain'
 import React, { useEffect } from "react";
 // import styles from '../../../style.js'
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 // import portfolioData from './'
 import portfolioData from "./components/pagesSection/portfolio/portfolioData";
 import Aos from "aos";
@@ -10,6 +10,11 @@ import "aos/dist/aos.css";
 import "./portfolioHover.css";
 
 const Portfolio = () => {
+  const navigate = useNavigate();
+  const handleRedirect = (url,e) => {
+      e.preventDefault();
+      navigate(url)
+    };
   // Aos
   useEffect(() => {
     Aos.init({
@@ -56,7 +61,7 @@ const Portfolio = () => {
                   className={`w-full block ${PortStyle} promo`}
                   //   data-aos="fade-up"
                 >
-                  <Link to={PortTitle}>
+                  <Link to={PortTitle} onClick={()=>handleRedirect(PortTitle)}>
                     {/* work card start */}
                     <div className="w-full md:max-w-[100%] mx-auto">
                       <div className="w-full ml-0 mr-auto py-10 md:py-2 recent_cursor">
