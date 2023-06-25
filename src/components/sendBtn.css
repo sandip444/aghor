@@ -70,7 +70,8 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%; /*we can change width of box from here */
+  width: 100%;
+  /*we can change width of box from here */
   height: 100%;
   border-radius: 30px;
   background: #ffffff;
@@ -125,6 +126,7 @@
   left: 80%;
   transition-delay: 0.24s;
 }
+
 .blob-btn__blob:nth-child(5) {
   left: 100%;
   transition-delay: 0.3s;
@@ -141,8 +143,22 @@
   }
 } */
 
-@media (max-width:768px){
-  .send-button .blob-btn{
+@media(max-width:560px) {
+  .file-send-button .glow-on-hover {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .file-send-button {
+    flex-direction: column !important;
+    margin-bottom: 50px;
+  }
+
+  .send-button {
+    width: 100% !important;
+  }
+
+  .send-button .blob-btn {
     width: 100%;
   }
 }

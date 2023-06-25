@@ -193,7 +193,7 @@ const JoinTeamForm = () => {
 
                 {/* file upload start */}
                 <div className="rounded-full w-full md:w-[80%] grid md:flex md:justify-between items-center relative">
-                  <div className="glow-on-hover md:min-w-[195px] min-w-full w-full relative grid items-center bg-[#111111] border border-[#464545] rounded-full">
+                  <div className="glow-on-hover min-w-[195px]  relative grid md:items-center bg-[#111111] border border-[#464545] rounded-full">
                     {/* attach and label */}
                     <div className="relative flex items-center">
                       <div
@@ -260,7 +260,7 @@ const JoinTeamForm = () => {
                 </div>
                 {/* file upload end */}
 
-                <div className="md:w-fit w-full send-button">
+                <div className="w-fit send-button">
                   <SendBtn title="Send request" />
                 </div>
 

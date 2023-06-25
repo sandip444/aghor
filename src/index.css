@@ -677,3 +677,30 @@ body {
   width: 100vw;
 }
 
+.home-banner-content{
+  margin-top: -20px !important;
+}
+
+.home-banner-content h1:first-child{
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1279px){
+  .home-banner-content{
+    margin-top: -50px !important;
+  }
+  .home-banner-content h1:nth-child(2){
+   max-width: 487px;
+   width: 100%;
+  }
+}
+
+@media (max-width: 768px){
+  .home-banner-content{
+    margin-top: -70px !important;
+  }
+  .home-banner-content h1:nth-child(2){
+    max-width: 336px;
+   }
+}
+

@@ -4,7 +4,7 @@ import styles from '../../../style'
 const GraphicDesigning = () => {
     return (
         <>
-            <div className={`${styles.maxWidth} ${styles.paddingX} mx-auto text-white`}>
+            <div className={`${styles.maxWidth} ${styles.paddingX} mx-auto text-white pt-[110px]`}>
                 <div className="bg-[#bf132f]">
                     <img className="max-w-[80%] mx-auto" src={require('../../../assets/images/services/Graphic-Design.svg').default} alt="services" />
                 </div>

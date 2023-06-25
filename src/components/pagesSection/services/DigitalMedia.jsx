@@ -4,7 +4,7 @@ import styles from '../../../style'
 const DigitalMedia = () => {
     return (
         <>
-            <div className={`${styles.maxWidth} ${styles.paddingX} mx-auto text-white `}>
+            <div className={`${styles.maxWidth} ${styles.paddingX} mx-auto text-white pt-[110]`}>
                 <div className="bg-[#15236c]">
                     <img className="max-w-[80%] mx-auto mb-16" src={require('../../../assets/images/services/digital-media-marketing.svg').default} alt="services" />
                 </div>

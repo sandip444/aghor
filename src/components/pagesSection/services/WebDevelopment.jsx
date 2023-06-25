@@ -5,7 +5,7 @@ import { informationBaseData, eCommerceData } from './ServicesContents'
 const WebDevelopment = () => {
     return (
         <>
-            <div className={`${styles.maxWidth} ${styles.paddingX} mx-auto text-white`}>
+            <div className={`${styles.maxWidth} ${styles.paddingX} mx-auto text-white pt-[110px]`}>
                 <div className="bg-[#1cb04e]">
                     <img className="max-w-[80%] mx-auto" src={require('../../../assets/images/services/Web-development.svg').default} alt="Web-Devlopment" />
                 </div>
