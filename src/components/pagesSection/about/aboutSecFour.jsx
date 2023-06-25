@@ -5,7 +5,7 @@ const AboutSecFour = () => {
         <>
             <div
                 name="experience"
-                className=" w-full h-full md:h-full px-6 md:py-18 py-12"
+                className=" w-full h-full md:h-full px-6 lg:py-18 py-[30px]"
             >
                 <div className="max-w-screen-lg mx-auto  flex flex-col justify-center w-full md:h-full text-white">
                     <div>

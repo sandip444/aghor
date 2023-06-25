@@ -10,21 +10,21 @@ const ProcessContent = () => {
   };
   return (
     <>
-      <div className="flex h-full py-10 px-6  text-white z-[100]">
+      <div className="flex h-full md:py-10 py-[30px] px-6  text-white z-[100]">
         <div
           className={`${styles.maxContainerWidth}  mx-auto flex flex-col md:h-[70vh] justify-between`}
         >
           <p className="text-2xl md:text-4xl">
           Our relentless pursuit of excellence and our unwavering commitment to artistic integrity set us apart in the industry. With a seamless fusion of cutting-edge technology and a deep understanding of human emotions, we craft immersive brand experiences that leave a lasting impression. 
           </p>
-          <div className=" block sm:flex py-10 gap-x-20 items-center">
+          <div className="flex sm:flex-row flex-col md:py-10 py-[10px] lg:gap-20 gap-[40px]  items-center">
             <Link
               to="#" onClick={handleRedirect}
-              className=" w-full md:w-[25%] flex md:justify-center pb-5"
+              className="md:w-full w-fit flex md:justify-center pb-5"
             >
               <ReadMoreBtn />
             </Link>
-            <div className="text-white-custom w-full sm:w-[75%] sm:pl-40">
+            <div className="text-white-custom w-full lg:pl-[50px]">
               <p>
               Our team of visionary artisans, strategists, and storytellers possesses an uncanny ability to unravel the essence of a brand, infusing it with an electric energy that sparks curiosity and captivates hearts.
               </p>

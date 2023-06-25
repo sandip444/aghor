@@ -8,7 +8,7 @@ const AboutTeamTwo = () => {
         <>
 
             {/* Team text start */}
-            <div className='text-white pt-20'>
+            <div className='text-white lg:pt-20 pt-[30px]'>
                 <Marquee direction="left" speed={75} className='custom_marque overflow-hidden	'>
                     <h2 className=" text-3xl md:text-6xl ">  - Members —  Team - Members — Team - Members — Team - Members — Team - Members — Team - Members — Team - Members — Team  &nbsp;   </h2>
                 </Marquee>

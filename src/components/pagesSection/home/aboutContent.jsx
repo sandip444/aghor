@@ -14,18 +14,18 @@ const AboutContent = () => {
         <div
           className={`${styles.maxContainerWidth}  mx-auto flex flex-col md:h-[80vh] justify-between`}
         >
-          <p className="text-3xl md:text-6xl z-6">
+          <p className="text-[24px] lg:text-[45px] md:text-[30px] lg:leading-[55px] md:leading-[40px] leading-[34px] z-6">
           Aghori Media House: Where innovation and artistic prowess converge, 
           redefining the realm of branding with unparalleled creativity and impact.
           </p>
-          <div className=" block sm:flex py-10 gap-x-20 items-center">
+          <div className=" flex sm:flex-row flex-col py-10 lg:gap-20 gap-[40px]  items-center">
             <Link
               to="#" onClick={handleRedirect}
-              className=" w-full md:w-[25%] flex md:justify-center pb-5"
+              className="md:w-full w-fit flex md:justify-center pb-5"
             >
               <ReadMoreBtn />
             </Link>
-            <div className="text-white-custom w-full sm:w-[75%] sm:pl-40">
+            <div className="text-white-custom w-full lg:pl-[50px] ">
               <p>
               we are pioneers of unconventional storytelling, pushing the boundaries of imagination to create captivating brand narratives that resonate deeply with audiences.
               </p>

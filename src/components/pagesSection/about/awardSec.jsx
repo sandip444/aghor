@@ -3,7 +3,7 @@ import React from 'react'
 const AwardSec = () => {
     return (
         <>
-            <div className="w-full max-w-screen-lg mx-auto h-full py-16 sm:py-24 md:px-0 px-6 text-white">
+            <div className="w-full max-w-screen-lg mx-auto lg:py-16 py-[30px] md:px-0 px-6 text-white">
                 <h2 className="text-4xl ">Awards Recognitions</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-1 py-14">

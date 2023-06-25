@@ -17,7 +17,7 @@ import teamData from "./teamData";
 const AboutSecfive = () => {
     return (
         <>
-            <div className='text-white pt-20'>
+            <div className='text-white lg:pt-20 mt-[30px]'>
                 <Marquee direction="left" speed={75} className='custom_marque overflow-hidden	'>
                     <h2 className=" text-3xl md:text-7xl ">  - Members —  Team - Members — Team - Members — Team - Members — Team - Members — Team - Members — Team - Members — Team  &nbsp;   </h2>
                 </Marquee>
