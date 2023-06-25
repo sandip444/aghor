@@ -5,7 +5,7 @@ import { socialMediaData } from './ServicesContents'
 const SocialMedia = () => {
     return (
         <>
-            <div className={`${styles.maxWidth} ${styles.paddingX} mx-auto text-white`}>
+            <div className={`${styles.maxWidth} ${styles.paddingX} mx-auto text-white pt-[110px]`}>
                 <div className="bg-[#fec200]">
                     <img className="max-w-[80%] mx-auto" src={require('../../../assets/images/services/Social-media-marketing.svg').default} alt="services" />
                 </div>

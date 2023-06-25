@@ -10,7 +10,7 @@ const Branding = () => {
       });
     return (
         <>
-            <div className={`${styles.maxWidth} ${styles.paddingX} mx-auto text-white`}>
+            <div className={`${styles.maxWidth} ${styles.paddingX} mx-auto text-white pt-[110px]`}>
                 <div className="bg-[#1f1f1f]">
                     <img className="max-w-[80%] mx-auto" src={require('../../../assets/images/services/Branding.svg').default} alt="services" />
                 </div>
