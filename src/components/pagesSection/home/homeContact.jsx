@@ -3,7 +3,7 @@ import Marquee from 'react-fast-marquee'
 const HomeContact = () => {
     return (
         <>
-            <div className="w-full py-40z flex flex-col justify-center items-center text-white ">
+            <div className="w-full py-40z flex flex-col justify-center items-center text-white py-[60px]">
                 <Marquee direction="left" speed={75} className='custom_marque overflow-hidden'>
                     <h2 className=" text-3xl md:text-6xl"> Let’s talk — Contact us —  Let’s talk — Contact us —  Let’s talk — Contact us —  Let’s talk — Contact us —  Let’s talk — Contact us —  Let’s talk — Contact us —  Let’s talk — Contact us —  </h2>
                 </Marquee>

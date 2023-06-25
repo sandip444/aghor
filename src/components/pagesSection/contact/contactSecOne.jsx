@@ -65,7 +65,7 @@ const ContactSecOne = () => {
   return (
     <>
       <div
-        className={`${styles.maxContainerWidth}  py-16 flex flex-col text-white mx-auto px-6`}
+        className={`${styles.maxContainerWidth}  py-16 flex flex-col text-white mx-auto px-6 !pt-[110px]`}
       >
         <motion.div
           initial="hidden"
@@ -83,7 +83,7 @@ const ContactSecOne = () => {
         {/* content end */}
 
         {/* form start */}
-        <div className="py-20">
+        <div className="lg:py-20">
           <form action="">
             <div className="grid grid-cols-2 text-white gap-y-8">
               {/* input and label start */}
@@ -173,8 +173,8 @@ const ContactSecOne = () => {
 
               <div className="grid md:flex md:justify-between items-center col-span-2 md:pr-8">
                 {/* file upload start */}
-                <div className="rounded-full my-[-50px] w-full md:w-[80%] grid md:flex md:justify-between items-center">
-                  <div className="glow-on-hover min-w-[195px] w-full relative grid items-center bg-[#111111] border border-[#464545] rounded-full">
+                <div className="rounded-full w-full md:w-[80%] grid md:flex md:justify-between items-center relative">
+                  <div className="glow-on-hover md:min-w-[195px] min-w-full w-full relative grid items-center bg-[#111111] border border-[#464545] rounded-full">
                     {/* attach and label */}
                     <div className="relative flex items-center">
                       <div
@@ -241,8 +241,8 @@ const ContactSecOne = () => {
                 </div>
                 {/* file upload end */}
 
-                <div className="my-[-50px] w-full md:w-[20%]">
-                  <SendBtn title="Send request" className="md:mt-0 mt-8" />
+                <div className="md:w-fit w-full send-button">
+                  <SendBtn title="Send request" />
                 </div>
               </div>
             </div>

@@ -43,7 +43,7 @@ const Services = () => {
     return (
         <>
 
-            <div data-aos="fade-up" className={`${styles.maxWidth} mx-auto px-6 md:py-20 py-10`}>
+            <div data-aos="fade-up" className={`${styles.maxWidth} mx-auto px-6 md:py-20 py-10 !pt-[120px]`}>
 
                 {/* text header start */}
                 <motion.div

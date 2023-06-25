@@ -4,7 +4,7 @@ import "./sendBtn.css";
 
 const SendBtn = ({ title, className }) => {
   return (
-    <div className="flex items-center justify-center mb-[-130px]">
+    <div className="">
       {/* <button className="btn btn-1 hover-filled-slide-up">
                 <span className="rounded-full">hover me</span>
             </button> */}
@@ -21,7 +21,7 @@ const SendBtn = ({ title, className }) => {
         </button>
         <br />
 
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        {/* <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
           <defs>
             <filter id="goo">
               <feGaussianBlur
@@ -38,7 +38,7 @@ const SendBtn = ({ title, className }) => {
               <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
             </filter>
           </defs>
-        </svg>
+        </svg> */}
       </div>
 
       {/* <button className={"SendBtn hoverSlideUp" + " " + className}>

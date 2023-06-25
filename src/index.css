@@ -257,7 +257,7 @@ body {
 
 .swiper-button-prev {
   left: auto !important;
-  right: 5% !important;
+  right: 70px !important;
 }
 
 .iconPlay:after,
@@ -619,9 +619,6 @@ body {
     .readMoreBtn .readArrowIcon svg {
         width: 70%;
     } */
-  .swiper-button-prev {
-    right: 25% !important;
-  }
 
   .readMoreBtn svg {
     width: 25%;
@@ -679,3 +676,4 @@ body {
 .activeHeader {
   width: 100vw;
 }
+
