@@ -5,6 +5,10 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 const RecentWorks = () => {
+  const handleRedirect = (e) => {
+    e.preventDefault();
+    window.location.href = '/portfolio'; // Replace with your desired URL
+  };
   // Aos
   useEffect(() => {
     Aos.init({
@@ -16,8 +20,8 @@ const RecentWorks = () => {
 
   return (
     <>
-      <div className="max-w-screen-lg mx-auto py-10 md:py-20 px-6 md:px-16 z-[100]">
-        <h2 className="text-4xl md:text-8xl text-white md:text-center font-semibold md:mt-[80px] md:my-20 my-10">
+      <div className="max-w-screen-lg mx-auto py-[30px]  md:py-20 px-6 md:px-16 z-[100]">
+        <h2 className="text-[28px] lg:text-8xl md:-text-[40px] text-white md:text-center font-semibold md:mt-[80px] md:my-20 my-[10px]">
           Recent Works
         </h2>
 
@@ -29,7 +33,7 @@ const RecentWorks = () => {
             // data-aos="fade-up"
           >
             {/* work card start */}
-            <div className="max-w-[500px] w-full">
+            <div className="max-w-[500px] mx-auto w-full">
               <div className="w-full mx-auto  recent_cursor">
                 <img
                   src={require("../../../assets/images/tailwind.png")}
@@ -58,7 +62,7 @@ const RecentWorks = () => {
             // data-aos="fade-up"
           >
             {/* work card start */}
-            <div className="max-w-[500px] w-full">
+            <div className="max-w-[500px] mx-auto w-full">
               <div className="w-full mx-auto  recent_cursor">
                 <img
                   src={require("../../../assets/images/baba_img.png")}
@@ -86,10 +90,10 @@ const RecentWorks = () => {
             // data-aos="fade-up"
           >
             {/* work card start */}
-            <div className="max-w-[500px] w-full">
+            <div className="max-w-[500px] mx-auto w-full">
               <div className="w-full mx-auto  recent_cursor">
                 <img
-                  src={require("/Users/sbhesaniya/Movies/aghor/src/assets/images/services/graphic/IDENTITY_LOGO_DESIGN.png")}
+                  // src={require("/Users/sbhesaniya/Movies/aghor/src/assets/images/services/graphic/IDENTITY_LOGO_DESIGN.png")}
                   alt="work-1"
                   className="w-full h-full image-animation"
                 />
@@ -114,7 +118,7 @@ const RecentWorks = () => {
             // data-aos="fade-up"
           >
             {/* work card start */}
-            <div className="max-w-[500px] w-full">
+            <div className="max-w-[500px] mx-auto w-full">
               <div className="w-full mx-auto  recent_cursor">
                 <img
                   src={require("../../../assets/images/work-4.webp")}
@@ -141,7 +145,7 @@ const RecentWorks = () => {
           <div className="block md:row-start-[20] md:row-end-[26] md:col-start-3 col-span-2">
             {/* work card start */}
             <div className="max-w-[500px] h-full w-full flex md:justify-center items-center">
-              <Link to="/portfolio">
+              <Link to="#" onClick={handleRedirect}>
                 <ReadMoreBtn />
               </Link>
             </div>

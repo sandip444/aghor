@@ -4,37 +4,29 @@ import ReadMoreBtn from "../../readMoreBtn";
 import { Link } from "react-router-dom";
 // import ReadMoreBtn from '../../../assets/images/readmore-text.svg'
 const ProcessContent = () => {
+  const handleRedirect = (e) => {
+    e.preventDefault();
+    window.location.href = '/expertis'; // Replace with your desired URL
+  };
   return (
     <>
-      <div className="flex h-full py-10 px-6  text-white z-[100]">
+      <div className="flex h-full md:py-10 py-[30px] px-6  text-white z-[100]">
         <div
           className={`${styles.maxContainerWidth}  mx-auto flex flex-col md:h-[70vh] justify-between`}
         >
           <p className="text-2xl md:text-4xl">
-            We offer effective digital marketing solutions, catering to your
-            need for branding, graphic designing, web development, content
-            writing, and social media management. We prioritize in creating
-            awareness that peaks the reach of your brand.
+          Our relentless pursuit of excellence and our unwavering commitment to artistic integrity set us apart in the industry. With a seamless fusion of cutting-edge technology and a deep understanding of human emotions, we craft immersive brand experiences that leave a lasting impression. 
           </p>
-          <div className=" block sm:flex py-10 gap-x-20 items-center">
+          <div className="flex sm:flex-row flex-col md:py-10 py-[10px] lg:gap-20 gap-[40px]  items-center">
             <Link
-              to="/about"
-              className=" w-full md:w-[25%] flex md:justify-center pb-5"
+              to="#" onClick={handleRedirect}
+              className="md:w-full w-fit flex md:justify-center pb-5"
             >
               <ReadMoreBtn />
             </Link>
-            <div className="text-white-custom w-full sm:w-[75%] sm:pl-40">
+            <div className="text-white-custom w-full lg:pl-[50px]">
               <p>
-                Our artists hold tireless brainstorming sessions, to produce
-                creative ideas that serve you better.Our diligent workforce also
-                resolves your woes concerning Ad films, corporate gifts, public
-                relations, event management, and corporate service. Emphasizing
-                a value-driven and client-centric approach, we ensure
-                originality and transparency in our projects. We work on the
-                foundation of strong work ethics that allows us to deliver
-                quality output for our clients. We seek pleasure in this play of
-                creativity. Delivering an output that accurately syncs with the
-                idea of the client, gives us real joy.
+              Our team of visionary artisans, strategists, and storytellers possesses an uncanny ability to unravel the essence of a brand, infusing it with an electric energy that sparks curiosity and captivates hearts.
               </p>
               <hr className="mt-6"></hr>
             </div>

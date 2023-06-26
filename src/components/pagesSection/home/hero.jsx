@@ -5,10 +5,10 @@ import HeroAnimatedText from "./heroAnimatedtext";
 const Hero = () => {
   // Placeholder text data, as if from API
   const placeholderText = [
-    {
-      type: "h1",
-      text: "Aghori Media Team ® Digital Design Boutique with Focus on Aesthetics",
-    },
+    { type: "h1", text: "Aghori Media House ®"},
+    { type: "h1", text: "Emboldening and Empowering 'Brands'"}
+    // { type: "h1", text: "Aghori Media House ®"},
+    // { type: "h1", text: "Emboldening and Empowering 'Brands'"}
     // { type: "span1", text: "Aghori Media Team ®" },
     // { type: "span2", text: "Digital Design" },
     // { type: "span3", text: "Boutique with Focus" },
@@ -56,8 +56,8 @@ const Hero = () => {
 
   return (
     <>
-      <div className="max-w-[90%] mx-auto px-4 text-white md:flex h-full">
-        <div className="w-full md:w-[50%] h-[80vh] flex flex-col justify-between">
+      <div className="max-w-[90%] mx-auto lg:px-4 text-white md:flex h-full pt-[90px]">
+        <div className="w-full mt-[2%] md:w-[50%] md:h-[75vh] h-[80vh] flex flex-col justify-between gap-[10px]">
           {/* <motion.h1 className='text-3xl md:text-6xl'>
                         <span>Advanced Team ®</span><br />
                         <span>Digital Design</span><br />
@@ -71,8 +71,9 @@ const Hero = () => {
             // animate={replay ? "visible" : "hidden"}
             animate="visible"
             variants={container}
+            className="lg:mt-[-70px] md:mt-[-30px] mt-0"
           >
-            <div className="container md:mt-[-50px]  md:max-w-[500px] max-w-[250px] text-left">
+            <div className="home-banner-content md:mt-[10px] lg:max-w-[600px] max-w-full text-left">
               {placeholderText.map((item, index) => {
                 return <HeroAnimatedText {...item} key={index} />;
               })}
@@ -83,7 +84,7 @@ const Hero = () => {
             variants={paragraphText}
             initial="hidden"
             animate="visible"
-            className="md:w-[65%] ml-auto mr-0"
+            className="ml-auto mr-0"
           >
             <p>
               We at Aghori Media House are a tight-knit group of open-minded

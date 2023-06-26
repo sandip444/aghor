@@ -47132,7 +47132,7 @@
               });
               var e = 0;
               function n(n) {
-                n < 0.75 * r.a.viewport.size[1] || n > e
+                n < 0.1 * r.a.viewport.size[1] || n > e
                   ? (r.a.html.classList.remove("show-fixed-header"),
                     t.classList.remove("show-fixed"))
                   : n < e &&

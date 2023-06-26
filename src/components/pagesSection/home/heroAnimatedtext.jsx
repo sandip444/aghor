@@ -72,7 +72,7 @@ const HeroAnimatedText = (props) => {
                                 >
                                     <motion.span
                                         // style={{ display: "inline-block" }}
-                                        className='text-2xl md:text-5xl  md:leading-tight  inline-block text-white'
+                                        className='md:text-[34px] lg:text-5xl text-[24px] inline-block text-white lg:!leading-[60px] md:!leading-[45px] !leading-[34px]'
                                         variants={item}
                                     >
                                         {element}

@@ -8,13 +8,19 @@ import "aos/dist/aos.css"
 //import gsap from "gsap";
 // import serImg from './assets/images/services/Web Development.gif'
 // import serImg2 from './assets/images/services/Digital Marketing.gif'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+
 const Services = () => {
+    // const history = useHistory();
+    const navigate = useNavigate();
+    const handleRedirect = (url,e) => {
+        e.preventDefault();
+        navigate(url)
+      };
     useEffect (() =>{
         aos.init({
             duration: 2000,
         });
-        // aos.refresh();
 
     })
 
@@ -37,7 +43,7 @@ const Services = () => {
     return (
         <>
 
-            <div data-aos="fade-up" className={`${styles.maxWidth} mx-auto px-6 md:py-20 py-10`}>
+            <div data-aos="fade-up" className={`${styles.maxWidth} mx-auto px-6 md:py-20 py-10 !pt-[120px]`}>
 
                 {/* text header start */}
                 <motion.div
@@ -53,7 +59,7 @@ const Services = () => {
                         })}
 
                         <p className="max-w-md text-white my-6">
-                            We offer effective digital marketing solutions, catering to your need for branding, graphic designing, web development, content writing, and social media management. We prioritize in creating awareness that peaks the reach of your brand.
+                        Our relentless pursuit of excellence and our unwavering commitment to artistic integrity set us apart in the industry. With a seamless fusion of cutting-edge technology and a deep understanding of human emotions, we craft immersive brand experiences that leave a lasting impression. 
                         </p>
                     </div>
 
@@ -63,15 +69,12 @@ const Services = () => {
 
             </div>
 
-            <div className={`${styles.maxWidth} mx-auto px-6 md:py-20 py-10`}>
-
-
-
+            <div className={`${styles.maxWidth} mx-auto px-6 md:py-20 py-15`}>
                 {/* grid start */}
                 <div className="grid md:grid-cols-4 grid-cols-1 text-white gap-10 auto-rows-auto ">
                     {/* service item start */}
                     {servicesData.map(({ id, serTitle, serDescription, serImg, serLink, serStyle }) => (
-                        <Link to={serLink} key={id} className={`flex md:flex-row flex-col-reverse  col-span-4 md:col-span-3  mb-6 rounded-lg recent_cursor ${serStyle}`}>
+                            <Link to={serLink} onClick={()=>handleRedirect(serLink)} key={id} className={`flex md:flex-row flex-col-reverse col-span-4 md:col-span-3  mb-6 rounded-lg recent_cursor ${serStyle}`}>
                             {/* content */}
                             <div className="w-full md:w-[40%] md:p-16 p-4 justify-center  flex flex-col  ">
                                 <h2 className="mb-4 text-3xl  ">{serTitle}</h2>
@@ -82,7 +85,7 @@ const Services = () => {
                             <div className="w-full p-4 md:w-[60%]">
                                 <img src={serImg} alt={serTitle} className="w-full" />
                             </div>
-                        </Link>
+                        </Link>                       
                     ))}
 
                     {/* service item end */}

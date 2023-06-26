@@ -5,7 +5,7 @@ import { contentWritingData } from './ServicesContents'
 const ContentWriting = () => {
     return (
         <>
-            <div className={`${styles.maxWidth} ${styles.paddingX} mx-auto text-white`}>
+            <div className={`${styles.maxWidth} ${styles.paddingX} mx-auto text-white pt-[110px]`}>
                 <div className="bg-[#ff443b]">
                     <img className="max-w-[80%] mx-auto" src={require('../../../assets/images/services/content-writing.svg').default} alt="services" />
                 </div>

@@ -16,24 +16,28 @@ const OurServices = () => {
     >
       <div className="w-full  md:h-[70vh] flex flex-col justify-center  text-white relative">
         {/* service list  start*/}
-        <div className="text-white z-10 w-full  py-20">
+        <div className="text-white z-10 w-full md:py-20 py-[30px]">
           <div
             className={`${styles.maxContainerWidth} mx-auto px-6 md:px-0 trans`}
           >
-            <h2>Our services:</h2>
-            <ul className="font-semibold font-mono">
-              <li className="text-4xl lg:text-6xl 2xl:text-7xl">
+            <h2>Our Expertis:</h2>
+            <ul className="font-semibold font-mono lg:pl-0 pl-[15px]">
+              <li className="text-[24px] lg:text-[40px] 2xl:text-7xl">
                 <span className="font-extralight">Graphic</span> Design
               </li>
-              <li className="text-4xl lg:text-6xl 2xl:text-7xl">Branding</li>
-              <li className="text-4xl lg:text-6xl 2xl:text-7xl">
+              <li className="text-[24px] lg:text-[40px] 2xl:text-7xl">Branding</li>
+              <li className="text-[24px] lg:text-[40px] 2xl:text-7xl">
+                <span className="font-extralight">Content</span> creation
+              </li>
+              
+              <li className="text-[24px] lg:text-[40px] 2xl:text-7xl">
+                <span className="font-extralight">Social</span> Media Marketing
+              </li>
+              <li className="text-[24px] lg:text-[40px] 2xl:text-7xl">
+                <span className="font-extralight">Digital</span> Media Marketing
+              </li>
+              <li className="text-[24px] lg:text-[40px] 2xl:text-7xl">
                 <span className="font-extralight">Web</span> Development
-              </li>
-              <li className="text-4xl lg:text-6xl 2xl:text-7xl">
-                <span className="font-extralight">Social</span> Media
-              </li>
-              <li className="text-4xl lg:text-6xl 2xl:text-7xl">
-                <span className="font-extralight">Digital</span> Media
               </li>
             </ul>
           </div>

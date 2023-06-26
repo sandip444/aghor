@@ -5,26 +5,28 @@ import { socialMediaData } from './ServicesContents'
 const SocialMedia = () => {
     return (
         <>
-            <div className={`${styles.maxWidth} ${styles.paddingX} mx-auto text-white`}>
+            <div className={`${styles.maxWidth} ${styles.paddingX} mx-auto text-white pt-[110px]`}>
                 <div className="bg-[#fec200]">
                     <img className="max-w-[80%] mx-auto" src={require('../../../assets/images/services/Social-media-marketing.svg').default} alt="services" />
                 </div>
 
                 <div className="md:py-20 py-8 ">
-                    <h1 className="text-3xl mb-8">Social Media Marketing Services To Enhance Brand Engagement</h1>
+                    <h1 className="text-3xl mb-8">Social media</h1>
                     <div className="text-justify gap-2 grid grid-cols-1">
                         <p>
-                            Aghori is a social media marketing agency that keeps up-to-date research and helps your company to grow substantially. It’s appropriate to see that our social media marketing agency and its services are a key element for success in marketing and many marketers realize the potential for business growth using our platform.
+                            Unleash your brand's potential with our expert social media marketing services. Our skilled team helps you connect with your target audience, build brand awareness, and drive growth on social media.
                         </p>
                         <p>
-                            The contrivance of a social media strategy will greatly increase your brand recognition since you will be engaging with a vast and varied audience of consumers. To gradually initiate, create social media profiles for your business and begin interacting with others.
+                            Through data-driven insights, we develop tailored strategies that resonate with your audience. We create engaging content, select relevant channels, and spark conversations.
                         </p>
                         <p>
-                            Different brands have different goals to achieve and thus, the strategies for each of the brands will showcase a unique perspective that will reflect their identity. Creating and sharing valuable content that will be needful to the audience will also grab more reach and attention than content that just talks about the brand in general. The right kind of tactic used in social media marketing involves the end-users performing a desired action such as buying the product of the brand and driving sales with it.
+                            Compelling visuals, captivating copy, and strategic posting schedules ensure your brand stays top-of-mind. We establish a consistent brand voice, building loyalty and an online community.
                         </p>
                         <p>
-                            Aghori Media House, with its in-house talent in developing innovative marketing strategies produces tangible results that boost your brand’s resonation with customers thus, proving the success of the campaign for your brand.
+                            Our team actively engages with your audience, manages your reputation, and provides exceptional customer service. We foster authentic connections and build trust.
                         </p>
+                        <p>We measure success through key metrics, providing detailed reports on demographics, engagement, reach, and conversions. These insights optimize our strategies for continuous growth.</p>
+                        <p>Partner with us to unlock the power of social media. Let us craft a compelling strategy that enhances your visibility, engages your audience, and generates real results. Contact us now.</p>
                     </div>
 
 

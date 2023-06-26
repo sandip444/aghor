@@ -4,32 +4,30 @@ import { Link } from "react-router-dom";
 import styles from "../../../style";
 // import ReadMoreBtn from '../../../assets/images/readmore-text.svg'
 const AboutContent = () => {
+  const handleRedirect = (e) => {
+    e.preventDefault();
+    window.location.href = '/identity'; // Replace with your desired URL
+  };
   return (
     <>
       <div className="flex h-full py-10 px-6  text-white  z-[100]">
         <div
           className={`${styles.maxContainerWidth}  mx-auto flex flex-col md:h-[80vh] justify-between`}
         >
-          <p className="text-3xl md:text-6xl z-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-            perspiciatis, debitis blanditiis quam ullam aut repellendus, ipsam
-            expedita voluptatem ipsum nisi ea natus quis itaque consequatur modi
-            explicabo.
+          <p className="text-[24px] lg:text-[45px] md:text-[30px] lg:leading-[55px] md:leading-[40px] leading-[34px] z-6">
+          Aghori Media House: Where innovation and artistic prowess converge, 
+          redefining the realm of branding with unparalleled creativity and impact.
           </p>
-          <div className=" block sm:flex py-10 gap-x-20 items-center">
+          <div className=" flex sm:flex-row flex-col py-10 lg:gap-20 gap-[40px]  items-center">
             <Link
-              to="../../../about"
-              className=" w-full md:w-[25%] flex md:justify-center pb-5"
+              to="#" onClick={handleRedirect}
+              className="md:w-full w-fit flex md:justify-center pb-5"
             >
               <ReadMoreBtn />
             </Link>
-
-            <div className="text-white-custom w-full sm:w-[75%] sm:pl-40">
+            <div className="text-white-custom w-full lg:pl-[50px] ">
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Delectus repudiandae eum accusantium nulla animi possimus,
-                exercitationem unde harum explicabo quo quisquam fugiat hic.
-                Quia, tempora?
+              we are pioneers of unconventional storytelling, pushing the boundaries of imagination to create captivating brand narratives that resonate deeply with audiences.
               </p>
               <hr className="mt-6"></hr>
             </div>
