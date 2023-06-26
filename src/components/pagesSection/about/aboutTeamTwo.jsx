@@ -46,7 +46,7 @@ const AboutTeamTwo = () => {
                 </div>
 
                 <div className="text-center">
-                    <button onClick={event =>  window.location.href='/joinTeamForm'}>
+                    <button className='mt-[30px]' onClick={event =>  window.location.href='/joinTeamForm'}>
                         <SendBtn title="Click this button" className="md:mt-0 mt-7" />
                     </button>
                 </div>
