@@ -12,7 +12,7 @@ const GuruRandhawa = () => {
                 {guruRandhawaData.map((guruRandhawa) => (
                     <>
                         {/* content section start */}
-                        <div className="w-full my-20">
+                        <div className="w-full mb-20 pt-[110px]">
                             <h1 className="text-5xl mb-[20px]">{guruRandhawa.title}</h1>
                             <p className="text-xl md:text-3xl font-normal mb-12">
                                 {guruRandhawa.description}

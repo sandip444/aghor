@@ -73,7 +73,7 @@ const Hero = () => {
             variants={container}
             className="lg:mt-[-70px] md:mt-[-30px] mt-0"
           >
-            <div className="home-banner-content md:mt-[10px] lg:min-w-[600px] max-w-full text-left">
+            <div className="home-banner-content md:mt-[10px] lg:max-w-[600px] max-w-full text-left">
               {placeholderText.map((item, index) => {
                 return <HeroAnimatedText {...item} key={index} />;
               })}
