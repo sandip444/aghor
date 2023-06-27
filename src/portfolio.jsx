@@ -27,7 +27,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <div className={`max-w-[960px] text-white mx-auto px-6 py-16`}>
+      <div className={`max-w-[960px] text-white mx-auto px-6 py-20`}>
         {/* Heading */}
         <div
           className="py-12"
@@ -35,7 +35,7 @@ const Portfolio = () => {
           data-aos-delay="900"
           data-aos-duration="1500"
         >
-          <h2 className="text-3xl sm:text-6xl text-white">
+          <h2 className="text-3xl sm:text-6xl text-white mt-[4%]">
             Compelling visual journeys, 
             <br className="hidden sm:block" />
             crafted to inspire
