@@ -46,14 +46,14 @@ const OurServices = () => {
 
         {/* Image slider start*/}
         <motion.div
-          variants={slideIn("down", "ease", 0, 2.5)}
+          variants={slideIn("down", "ease", 0, 0.5)}
           className="w-full absolute z-1"
           viewport={{ once: false }}
         >
           <Marquee direction="left" speed={60} className="custom_marque">
             {ImgServicesData.map(({ id, imgSrc }) => (
               <div key={id} className="mx-3">
-                <img src={imgSrc} alt="img" className="w-[70%] md:w-[100%]" />
+                <img src={imgSrc} alt="img" className="w-[70%] sm:w-[180%]" />
               </div>
             ))}
           </Marquee>

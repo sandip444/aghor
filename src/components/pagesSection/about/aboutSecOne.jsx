@@ -3,7 +3,7 @@ import React from 'react'
 const AboutSecOne = () => {
     return (
         <>
-            <div className='w-full h-fit flex justify-center items-center md:h-[calc(100vh-90px)] pt-[90px] text-white  px-6 py-10'>
+            <div className='w-full h-fit flex justify-center items-center md:h-[calc(100vh-90px)] pt-[90px] text-white mb-[-8%] px-6 py-10'>
                 <div className='md:max-w-[850px] h-full mx-auto flex flex-col justify-center items-start gap-[30px] '>
                     <h1 className='text-3xl lg:text-5xl font-semibold md:leading-tight'>
                         <span className="font-extralight">We are pioneers of unconventional storytelling, pushing the boundaries of imagination to  </span>create captivating brand narratives that resonate deeply with audiences.

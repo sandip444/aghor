@@ -25,7 +25,7 @@
   </div>
 
   <div class="page" id="page">
-    <header class="header">
+    <header class="header" id="myHeader">
       <div class="header__nav">
         <div class="w-full h-[90px] text-white z-[999] activeHeader top-0 transition ease-in-out delay-150">
           <div class="px-6 flex items-center justify-between w-full md:max-w-[90%] mx-auto h-full">
@@ -199,6 +199,8 @@
 
     // Find the home page div
     var homePage = document.getElementById("home-page");
+    var element = document.getElementById("myHeader");
+
     var scrollPosition = window.scrollY || window.pageYOffset;
     if (currentPage === "/" && homePage.style.top !== 0) {
       // Hide the logo on the home page
